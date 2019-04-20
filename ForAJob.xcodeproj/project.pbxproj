@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98827B9FA956203AD0B8E907 /* libPods-ForAJob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B79ECFE3B41A8D608B5C0D /* libPods-ForAJob.a */; };
+		B03753FB21BA1634001F0E22 /* GAFAJRecordDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03753FA21BA1634001F0E22 /* GAFAJRecordDetailsViewController.m */; };
+		B03753FE21BCD214001F0E22 /* GAFRecordBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B03753FD21BCD214001F0E22 /* GAFRecordBottomView.m */; };
+		B037540121BD28CF001F0E22 /* FAJRecordDemoObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B037540021BD28CF001F0E22 /* FAJRecordDemoObject.m */; };
+		B037540421BD7009001F0E22 /* GAFAJRecordTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B037540321BD7009001F0E22 /* GAFAJRecordTypeViewController.m */; };
+		B041A54421B7B8BF00690E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A54321B7B8BF00690E9B /* AppDelegate.m */; };
+		B041A54721B7B8BF00690E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A54621B7B8BF00690E9B /* ViewController.m */; };
+		B041A54A21B7B8BF00690E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B041A54821B7B8BF00690E9B /* Main.storyboard */; };
+		B041A54C21B7B8C100690E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B041A54B21B7B8C100690E9B /* Assets.xcassets */; };
+		B041A54F21B7B8C100690E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B041A54D21B7B8C100690E9B /* LaunchScreen.storyboard */; };
+		B041A55221B7B8C100690E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A55121B7B8C100690E9B /* main.m */; };
+		B041A55C21B7B8C100690E9B /* ForAJobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A55B21B7B8C100690E9B /* ForAJobTests.m */; };
+		B041A56721B7B8C100690E9B /* ForAJobUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A56621B7B8C100690E9B /* ForAJobUITests.m */; };
+		B041A57921B7B9CE00690E9B /* GAFAJTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A57521B7B9CE00690E9B /* GAFAJTabbarVC.m */; };
+		B041A57A21B7B9CE00690E9B /* GAFAJNav.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A57721B7B9CE00690E9B /* GAFAJNav.m */; };
+		B041A59221B7B9F500690E9B /* GAFAJWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A57F21B7B9F500690E9B /* GAFAJWorkViewController.m */; };
+		B041A59321B7B9F500690E9B /* GAFAJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A58221B7B9F500690E9B /* GAFAJLoginViewController.m */; };
+		B041A59421B7B9F500690E9B /* GAFAJPrivacyAgreementView.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A58621B7B9F500690E9B /* GAFAJPrivacyAgreementView.m */; };
+		B041A59521B7B9F500690E9B /* GAFAJMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A58A21B7B9F500690E9B /* GAFAJMyViewController.m */; };
+		B041A59621B7B9F500690E9B /* GAFAJRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A58E21B7B9F500690E9B /* GAFAJRecordViewController.m */; };
+		B041A59721B7B9F500690E9B /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A59121B7B9F500690E9B /* NetworkTools.m */; };
+		B041A59A21B7C61C00690E9B /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A59821B7C61C00690E9B /* MBProgressHUD+Add.m */; };
+		B041A59D21B7C70100690E9B /* VertifyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A59B21B7C70000690E9B /* VertifyObject.m */; };
+		B041A5A321B7CE6800690E9B /* FirstPrivacyAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A5A221B7CE6800690E9B /* FirstPrivacyAgreementController.m */; };
+		B041A5A621B7CFEB00690E9B /* FirstScrollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B041A5A521B7CFEB00690E9B /* FirstScrollowViewController.m */; };
+		B04265F921B8C1D20004C895 /* FAJBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B04265F821B8C1D20004C895 /* FAJBaseObject.m */; };
+		B04265FC21B8C2920004C895 /* FAJMyFavoriteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B04265FB21B8C2920004C895 /* FAJMyFavoriteObject.m */; };
+		B04265FF21B8C33D0004C895 /* FAJCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B04265FE21B8C33D0004C895 /* FAJCacheManager.m */; };
+		B042660221B8C3880004C895 /* FAJBaseDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B042660121B8C3880004C895 /* FAJBaseDBManager.m */; };
+		B042660521B8C3FF0004C895 /* FAJMyFavoriteDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B042660421B8C3FF0004C895 /* FAJMyFavoriteDBManager.m */; };
+		B042660821B8F3200004C895 /* SecondScrollowViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B042660721B8F3200004C895 /* SecondScrollowViewViewController.m */; };
+		B042660B21B8F7ED0004C895 /* ThridScrollowViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B042660A21B8F7ED0004C895 /* ThridScrollowViewViewController.m */; };
+		B042660F21B9160D0004C895 /* WorkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B042660E21B9160C0004C895 /* WorkTableViewCell.m */; };
+		B042661221B924560004C895 /* FAJAdvertisingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B042661121B924560004C895 /* FAJAdvertisingObject.m */; };
+		B042661521B92F830004C895 /* GAFWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B042661421B92F830004C895 /* GAFWebViewController.m */; };
+		B0795CF021BE030500ECC274 /* GAFReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795CEF21BE030500ECC274 /* GAFReportView.m */; };
+		B0795CF321BE0C0700ECC274 /* GAFSuccessfulDeliveryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795CF221BE0C0700ECC274 /* GAFSuccessfulDeliveryView.m */; };
+		B0795CF721BE152100ECC274 /* DeliveryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795CF621BE152100ECC274 /* DeliveryTableViewCell.m */; };
+		B0795CFA21BE153300ECC274 /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795CF921BE153300ECC274 /* MineTableViewCell.m */; };
+		B0795D1121BE5C2100ECC274 /* GuanyuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795D1021BE5C2100ECC274 /* GuanyuViewController.m */; };
+		B0795D1721BE6A0300ECC274 /* PerfectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795D1621BE6A0300ECC274 /* PerfectViewController.m */; };
+		B0795D1A21BE6D1700ECC274 /* PerfectNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795D1921BE6D1700ECC274 /* PerfectNameTableViewCell.m */; };
+		B0795D1D21BE6D3000ECC274 /* PerfectSameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0795D1C21BE6D3000ECC274 /* PerfectSameTableViewCell.m */; };
+		B08CFC5321BF6D6D00CF4685 /* SelectedDataPerfectView.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CFC5221BF6D6D00CF4685 /* SelectedDataPerfectView.m */; };
+		B08CFC5621BF8F9600CF4685 /* MySCTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08CFC5521BF8F9600CF4685 /* MySCTDViewController.m */; };
+		B08CFC5821BFA47600CF4685 /* useofterms1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B08CFC5721BFA47600CF4685 /* useofterms1.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B041A55821B7B8C100690E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B041A53721B7B8BF00690E9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B041A53E21B7B8BF00690E9B;
+			remoteInfo = ForAJob;
+		};
+		B041A56321B7B8C100690E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B041A53721B7B8BF00690E9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B041A53E21B7B8BF00690E9B;
+			remoteInfo = ForAJob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11B79ECFE3B41A8D608B5C0D /* libPods-ForAJob.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForAJob.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2310B5BC894C896877475165 /* Pods-ForAJob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForAJob.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForAJob/Pods-ForAJob.release.xcconfig"; sourceTree = "<group>"; };
+		B03753F921BA1634001F0E22 /* GAFAJRecordDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFAJRecordDetailsViewController.h; sourceTree = "<group>"; };
+		B03753FA21BA1634001F0E22 /* GAFAJRecordDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFAJRecordDetailsViewController.m; sourceTree = "<group>"; };
+		B03753FC21BCD214001F0E22 /* GAFRecordBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFRecordBottomView.h; sourceTree = "<group>"; };
+		B03753FD21BCD214001F0E22 /* GAFRecordBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFRecordBottomView.m; sourceTree = "<group>"; };
+		B03753FF21BD28CE001F0E22 /* FAJRecordDemoObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJRecordDemoObject.h; sourceTree = "<group>"; };
+		B037540021BD28CF001F0E22 /* FAJRecordDemoObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJRecordDemoObject.m; sourceTree = "<group>"; };
+		B037540221BD7009001F0E22 /* GAFAJRecordTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFAJRecordTypeViewController.h; sourceTree = "<group>"; };
+		B037540321BD7009001F0E22 /* GAFAJRecordTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFAJRecordTypeViewController.m; sourceTree = "<group>"; };
+		B041A53F21B7B8BF00690E9B /* ForAJob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForAJob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B041A54221B7B8BF00690E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B041A54321B7B8BF00690E9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B041A54521B7B8BF00690E9B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B041A54621B7B8BF00690E9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B041A54921B7B8BF00690E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B041A54B21B7B8C100690E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B041A54E21B7B8C100690E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B041A55021B7B8C100690E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B041A55121B7B8C100690E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B041A55721B7B8C100690E9B /* ForAJobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForAJobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B041A55B21B7B8C100690E9B /* ForAJobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForAJobTests.m; sourceTree = "<group>"; };
+		B041A55D21B7B8C100690E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B041A56221B7B8C100690E9B /* ForAJobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForAJobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B041A56621B7B8C100690E9B /* ForAJobUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForAJobUITests.m; sourceTree = "<group>"; };
+		B041A56821B7B8C100690E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B041A57421B7B95200690E9B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B041A57521B7B9CE00690E9B /* GAFAJTabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJTabbarVC.m; sourceTree = "<group>"; };
+		B041A57621B7B9CE00690E9B /* GAFAJNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJNav.h; sourceTree = "<group>"; };
+		B041A57721B7B9CE00690E9B /* GAFAJNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJNav.m; sourceTree = "<group>"; };
+		B041A57821B7B9CE00690E9B /* GAFAJTabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJTabbarVC.h; sourceTree = "<group>"; };
+		B041A57E21B7B9F500690E9B /* GAFAJWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJWorkViewController.h; sourceTree = "<group>"; };
+		B041A57F21B7B9F500690E9B /* GAFAJWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJWorkViewController.m; sourceTree = "<group>"; };
+		B041A58221B7B9F500690E9B /* GAFAJLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJLoginViewController.m; sourceTree = "<group>"; };
+		B041A58321B7B9F500690E9B /* GAFAJLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJLoginViewController.h; sourceTree = "<group>"; };
+		B041A58521B7B9F500690E9B /* GAFAJPrivacyAgreementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJPrivacyAgreementView.h; sourceTree = "<group>"; };
+		B041A58621B7B9F500690E9B /* GAFAJPrivacyAgreementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJPrivacyAgreementView.m; sourceTree = "<group>"; };
+		B041A58921B7B9F500690E9B /* GAFAJMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJMyViewController.h; sourceTree = "<group>"; };
+		B041A58A21B7B9F500690E9B /* GAFAJMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJMyViewController.m; sourceTree = "<group>"; };
+		B041A58D21B7B9F500690E9B /* GAFAJRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAFAJRecordViewController.h; sourceTree = "<group>"; };
+		B041A58E21B7B9F500690E9B /* GAFAJRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAFAJRecordViewController.m; sourceTree = "<group>"; };
+		B041A59021B7B9F500690E9B /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
+		B041A59121B7B9F500690E9B /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		B041A59821B7C61C00690E9B /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		B041A59921B7C61C00690E9B /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		B041A59B21B7C70000690E9B /* VertifyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertifyObject.m; sourceTree = "<group>"; };
+		B041A59C21B7C70000690E9B /* VertifyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertifyObject.h; sourceTree = "<group>"; };
+		B041A5A121B7CE6800690E9B /* FirstPrivacyAgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstPrivacyAgreementController.h; sourceTree = "<group>"; };
+		B041A5A221B7CE6800690E9B /* FirstPrivacyAgreementController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstPrivacyAgreementController.m; sourceTree = "<group>"; };
+		B041A5A421B7CFEB00690E9B /* FirstScrollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstScrollowViewController.h; sourceTree = "<group>"; };
+		B041A5A521B7CFEB00690E9B /* FirstScrollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstScrollowViewController.m; sourceTree = "<group>"; };
+		B04265F721B8C1D20004C895 /* FAJBaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJBaseObject.h; sourceTree = "<group>"; };
+		B04265F821B8C1D20004C895 /* FAJBaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJBaseObject.m; sourceTree = "<group>"; };
+		B04265FA21B8C2920004C895 /* FAJMyFavoriteObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJMyFavoriteObject.h; sourceTree = "<group>"; };
+		B04265FB21B8C2920004C895 /* FAJMyFavoriteObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJMyFavoriteObject.m; sourceTree = "<group>"; };
+		B04265FD21B8C33D0004C895 /* FAJCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJCacheManager.h; sourceTree = "<group>"; };
+		B04265FE21B8C33D0004C895 /* FAJCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJCacheManager.m; sourceTree = "<group>"; };
+		B042660021B8C3880004C895 /* FAJBaseDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJBaseDBManager.h; sourceTree = "<group>"; };
+		B042660121B8C3880004C895 /* FAJBaseDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJBaseDBManager.m; sourceTree = "<group>"; };
+		B042660321B8C3FF0004C895 /* FAJMyFavoriteDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJMyFavoriteDBManager.h; sourceTree = "<group>"; };
+		B042660421B8C3FF0004C895 /* FAJMyFavoriteDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJMyFavoriteDBManager.m; sourceTree = "<group>"; };
+		B042660621B8F3200004C895 /* SecondScrollowViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondScrollowViewViewController.h; sourceTree = "<group>"; };
+		B042660721B8F3200004C895 /* SecondScrollowViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondScrollowViewViewController.m; sourceTree = "<group>"; };
+		B042660921B8F7ED0004C895 /* ThridScrollowViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThridScrollowViewViewController.h; sourceTree = "<group>"; };
+		B042660A21B8F7ED0004C895 /* ThridScrollowViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThridScrollowViewViewController.m; sourceTree = "<group>"; };
+		B042660D21B9160C0004C895 /* WorkTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkTableViewCell.h; sourceTree = "<group>"; };
+		B042660E21B9160C0004C895 /* WorkTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkTableViewCell.m; sourceTree = "<group>"; };
+		B042661021B924560004C895 /* FAJAdvertisingObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAJAdvertisingObject.h; sourceTree = "<group>"; };
+		B042661121B924560004C895 /* FAJAdvertisingObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAJAdvertisingObject.m; sourceTree = "<group>"; };
+		B042661321B92F830004C895 /* GAFWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFWebViewController.h; sourceTree = "<group>"; };
+		B042661421B92F830004C895 /* GAFWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFWebViewController.m; sourceTree = "<group>"; };
+		B0795CEE21BE030500ECC274 /* GAFReportView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFReportView.h; sourceTree = "<group>"; };
+		B0795CEF21BE030500ECC274 /* GAFReportView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFReportView.m; sourceTree = "<group>"; };
+		B0795CF121BE0C0700ECC274 /* GAFSuccessfulDeliveryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAFSuccessfulDeliveryView.h; sourceTree = "<group>"; };
+		B0795CF221BE0C0700ECC274 /* GAFSuccessfulDeliveryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAFSuccessfulDeliveryView.m; sourceTree = "<group>"; };
+		B0795CF521BE152100ECC274 /* DeliveryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryTableViewCell.h; sourceTree = "<group>"; };
+		B0795CF621BE152100ECC274 /* DeliveryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryTableViewCell.m; sourceTree = "<group>"; };
+		B0795CF821BE153300ECC274 /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		B0795CF921BE153300ECC274 /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		B0795D0F21BE5C2100ECC274 /* GuanyuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuanyuViewController.h; sourceTree = "<group>"; };
+		B0795D1021BE5C2100ECC274 /* GuanyuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuanyuViewController.m; sourceTree = "<group>"; };
+		B0795D1521BE6A0300ECC274 /* PerfectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectViewController.h; sourceTree = "<group>"; };
+		B0795D1621BE6A0300ECC274 /* PerfectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerfectViewController.m; sourceTree = "<group>"; };
+		B0795D1821BE6D1700ECC274 /* PerfectNameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectNameTableViewCell.h; sourceTree = "<group>"; };
+		B0795D1921BE6D1700ECC274 /* PerfectNameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerfectNameTableViewCell.m; sourceTree = "<group>"; };
+		B0795D1B21BE6D3000ECC274 /* PerfectSameTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectSameTableViewCell.h; sourceTree = "<group>"; };
+		B0795D1C21BE6D3000ECC274 /* PerfectSameTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerfectSameTableViewCell.m; sourceTree = "<group>"; };
+		B08CFC5121BF6D6D00CF4685 /* SelectedDataPerfectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedDataPerfectView.h; sourceTree = "<group>"; };
+		B08CFC5221BF6D6D00CF4685 /* SelectedDataPerfectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedDataPerfectView.m; sourceTree = "<group>"; };
+		B08CFC5421BF8F9600CF4685 /* MySCTDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySCTDViewController.h; sourceTree = "<group>"; };
+		B08CFC5521BF8F9600CF4685 /* MySCTDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySCTDViewController.m; sourceTree = "<group>"; };
+		B08CFC5721BFA47600CF4685 /* useofterms1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = useofterms1.txt; sourceTree = "<group>"; };
+		CE45CA3AF50E0F48C9B08BAD /* Pods-ForAJob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForAJob.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForAJob/Pods-ForAJob.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B041A53C21B7B8BF00690E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98827B9FA956203AD0B8E907 /* libPods-ForAJob.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A55421B7B8C100690E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A55F21B7B8C100690E9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B041A53621B7B8BF00690E9B = {
+			isa = PBXGroup;
+			children = (
+				B041A58021B7B9F500690E9B /* Before */,
+				B041A57C21B7B9F500690E9B /* Job */,
+				B041A58721B7B9F500690E9B /* Mine */,
+				B041A58B21B7B9F500690E9B /* Recommend */,
+				B041A58F21B7B9F500690E9B /* Tools */,
+				B041A57B21B7B9D700690E9B /* New Group */,
+				B041A54121B7B8BF00690E9B /* ForAJob */,
+				B041A55A21B7B8C100690E9B /* ForAJobTests */,
+				B041A56521B7B8C100690E9B /* ForAJobUITests */,
+				B041A54021B7B8BF00690E9B /* Products */,
+				C67387D26BF5F64B92F1F328 /* Pods */,
+				FA064A205EFB9F4C3D7A9549 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B041A54021B7B8BF00690E9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B041A53F21B7B8BF00690E9B /* ForAJob.app */,
+				B041A55721B7B8C100690E9B /* ForAJobTests.xctest */,
+				B041A56221B7B8C100690E9B /* ForAJobUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B041A54121B7B8BF00690E9B /* ForAJob */ = {
+			isa = PBXGroup;
+			children = (
+				B08CFC5721BFA47600CF4685 /* useofterms1.txt */,
+				B041A57621B7B9CE00690E9B /* GAFAJNav.h */,
+				B041A57721B7B9CE00690E9B /* GAFAJNav.m */,
+				B041A57821B7B9CE00690E9B /* GAFAJTabbarVC.h */,
+				B041A57521B7B9CE00690E9B /* GAFAJTabbarVC.m */,
+				B041A54221B7B8BF00690E9B /* AppDelegate.h */,
+				B041A54321B7B8BF00690E9B /* AppDelegate.m */,
+				B041A54521B7B8BF00690E9B /* ViewController.h */,
+				B041A54621B7B8BF00690E9B /* ViewController.m */,
+				B041A54821B7B8BF00690E9B /* Main.storyboard */,
+				B041A54B21B7B8C100690E9B /* Assets.xcassets */,
+				B041A54D21B7B8C100690E9B /* LaunchScreen.storyboard */,
+				B041A55021B7B8C100690E9B /* Info.plist */,
+				B041A55121B7B8C100690E9B /* main.m */,
+				B041A57421B7B95200690E9B /* PrefixHeader.pch */,
+			);
+			path = ForAJob;
+			sourceTree = "<group>";
+		};
+		B041A55A21B7B8C100690E9B /* ForAJobTests */ = {
+			isa = PBXGroup;
+			children = (
+				B041A55B21B7B8C100690E9B /* ForAJobTests.m */,
+				B041A55D21B7B8C100690E9B /* Info.plist */,
+			);
+			path = ForAJobTests;
+			sourceTree = "<group>";
+		};
+		B041A56521B7B8C100690E9B /* ForAJobUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B041A56621B7B8C100690E9B /* ForAJobUITests.m */,
+				B041A56821B7B8C100690E9B /* Info.plist */,
+			);
+			path = ForAJobUITests;
+			sourceTree = "<group>";
+		};
+		B041A57B21B7B9D700690E9B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B041A57C21B7B9F500690E9B /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				B041A57D21B7B9F500690E9B /* Controller */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		B041A57D21B7B9F500690E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B041A57E21B7B9F500690E9B /* GAFAJWorkViewController.h */,
+				B041A57F21B7B9F500690E9B /* GAFAJWorkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B041A58021B7B9F500690E9B /* Before */ = {
+			isa = PBXGroup;
+			children = (
+				B041A58121B7B9F500690E9B /* Controller */,
+				B041A58421B7B9F500690E9B /* View */,
+			);
+			path = Before;
+			sourceTree = "<group>";
+		};
+		B041A58121B7B9F500690E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B041A58221B7B9F500690E9B /* GAFAJLoginViewController.m */,
+				B041A58321B7B9F500690E9B /* GAFAJLoginViewController.h */,
+				B041A5A121B7CE6800690E9B /* FirstPrivacyAgreementController.h */,
+				B041A5A221B7CE6800690E9B /* FirstPrivacyAgreementController.m */,
+				B041A5A421B7CFEB00690E9B /* FirstScrollowViewController.h */,
+				B041A5A521B7CFEB00690E9B /* FirstScrollowViewController.m */,
+				B042660621B8F3200004C895 /* SecondScrollowViewViewController.h */,
+				B042660721B8F3200004C895 /* SecondScrollowViewViewController.m */,
+				B042660921B8F7ED0004C895 /* ThridScrollowViewViewController.h */,
+				B042660A21B8F7ED0004C895 /* ThridScrollowViewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B041A58421B7B9F500690E9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B041A58521B7B9F500690E9B /* GAFAJPrivacyAgreementView.h */,
+				B041A58621B7B9F500690E9B /* GAFAJPrivacyAgreementView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B041A58721B7B9F500690E9B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B0795CF421BE14D400ECC274 /* View */,
+				B041A58821B7B9F500690E9B /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B041A58821B7B9F500690E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B041A58921B7B9F500690E9B /* GAFAJMyViewController.h */,
+				B041A58A21B7B9F500690E9B /* GAFAJMyViewController.m */,
+				B0795D0F21BE5C2100ECC274 /* GuanyuViewController.h */,
+				B0795D1021BE5C2100ECC274 /* GuanyuViewController.m */,
+				B08CFC5421BF8F9600CF4685 /* MySCTDViewController.h */,
+				B08CFC5521BF8F9600CF4685 /* MySCTDViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B041A58B21B7B9F500690E9B /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				B042660C21B915E80004C895 /* View */,
+				B041A58C21B7B9F500690E9B /* Controller */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		B041A58C21B7B9F500690E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B041A58D21B7B9F500690E9B /* GAFAJRecordViewController.h */,
+				B041A58E21B7B9F500690E9B /* GAFAJRecordViewController.m */,
+				B042661321B92F830004C895 /* GAFWebViewController.h */,
+				B042661421B92F830004C895 /* GAFWebViewController.m */,
+				B03753F921BA1634001F0E22 /* GAFAJRecordDetailsViewController.h */,
+				B03753FA21BA1634001F0E22 /* GAFAJRecordDetailsViewController.m */,
+				B037540221BD7009001F0E22 /* GAFAJRecordTypeViewController.h */,
+				B037540321BD7009001F0E22 /* GAFAJRecordTypeViewController.m */,
+				B0795D1521BE6A0300ECC274 /* PerfectViewController.h */,
+				B0795D1621BE6A0300ECC274 /* PerfectViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B041A58F21B7B9F500690E9B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B041A59C21B7C70000690E9B /* VertifyObject.h */,
+				B041A59B21B7C70000690E9B /* VertifyObject.m */,
+				B041A59921B7C61C00690E9B /* MBProgressHUD+Add.h */,
+				B041A59821B7C61C00690E9B /* MBProgressHUD+Add.m */,
+				B041A59021B7B9F500690E9B /* NetworkTools.h */,
+				B041A59121B7B9F500690E9B /* NetworkTools.m */,
+				B04265F721B8C1D20004C895 /* FAJBaseObject.h */,
+				B04265F821B8C1D20004C895 /* FAJBaseObject.m */,
+				B04265FA21B8C2920004C895 /* FAJMyFavoriteObject.h */,
+				B04265FB21B8C2920004C895 /* FAJMyFavoriteObject.m */,
+				B04265FD21B8C33D0004C895 /* FAJCacheManager.h */,
+				B04265FE21B8C33D0004C895 /* FAJCacheManager.m */,
+				B042660021B8C3880004C895 /* FAJBaseDBManager.h */,
+				B042660121B8C3880004C895 /* FAJBaseDBManager.m */,
+				B042660321B8C3FF0004C895 /* FAJMyFavoriteDBManager.h */,
+				B042660421B8C3FF0004C895 /* FAJMyFavoriteDBManager.m */,
+				B042661021B924560004C895 /* FAJAdvertisingObject.h */,
+				B042661121B924560004C895 /* FAJAdvertisingObject.m */,
+				B03753FF21BD28CE001F0E22 /* FAJRecordDemoObject.h */,
+				B037540021BD28CF001F0E22 /* FAJRecordDemoObject.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B042660C21B915E80004C895 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B042660D21B9160C0004C895 /* WorkTableViewCell.h */,
+				B042660E21B9160C0004C895 /* WorkTableViewCell.m */,
+				B03753FC21BCD214001F0E22 /* GAFRecordBottomView.h */,
+				B03753FD21BCD214001F0E22 /* GAFRecordBottomView.m */,
+				B0795CEE21BE030500ECC274 /* GAFReportView.h */,
+				B0795CEF21BE030500ECC274 /* GAFReportView.m */,
+				B0795CF121BE0C0700ECC274 /* GAFSuccessfulDeliveryView.h */,
+				B0795CF221BE0C0700ECC274 /* GAFSuccessfulDeliveryView.m */,
+				B0795D1821BE6D1700ECC274 /* PerfectNameTableViewCell.h */,
+				B0795D1921BE6D1700ECC274 /* PerfectNameTableViewCell.m */,
+				B0795D1B21BE6D3000ECC274 /* PerfectSameTableViewCell.h */,
+				B0795D1C21BE6D3000ECC274 /* PerfectSameTableViewCell.m */,
+				B08CFC5121BF6D6D00CF4685 /* SelectedDataPerfectView.h */,
+				B08CFC5221BF6D6D00CF4685 /* SelectedDataPerfectView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B0795CF421BE14D400ECC274 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0795CF521BE152100ECC274 /* DeliveryTableViewCell.h */,
+				B0795CF621BE152100ECC274 /* DeliveryTableViewCell.m */,
+				B0795CF821BE153300ECC274 /* MineTableViewCell.h */,
+				B0795CF921BE153300ECC274 /* MineTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C67387D26BF5F64B92F1F328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE45CA3AF50E0F48C9B08BAD /* Pods-ForAJob.debug.xcconfig */,
+				2310B5BC894C896877475165 /* Pods-ForAJob.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA064A205EFB9F4C3D7A9549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11B79ECFE3B41A8D608B5C0D /* libPods-ForAJob.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B041A53E21B7B8BF00690E9B /* ForAJob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B041A56B21B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJob" */;
+			buildPhases = (
+				C756D5D2D3C69DA7A8542DF0 /* [CP] Check Pods Manifest.lock */,
+				B041A53B21B7B8BF00690E9B /* Sources */,
+				B041A53C21B7B8BF00690E9B /* Frameworks */,
+				B041A53D21B7B8BF00690E9B /* Resources */,
+				51447B7B920DD1751A144FA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForAJob;
+			productName = ForAJob;
+			productReference = B041A53F21B7B8BF00690E9B /* ForAJob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B041A55621B7B8C100690E9B /* ForAJobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B041A56E21B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJobTests" */;
+			buildPhases = (
+				B041A55321B7B8C100690E9B /* Sources */,
+				B041A55421B7B8C100690E9B /* Frameworks */,
+				B041A55521B7B8C100690E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B041A55921B7B8C100690E9B /* PBXTargetDependency */,
+			);
+			name = ForAJobTests;
+			productName = ForAJobTests;
+			productReference = B041A55721B7B8C100690E9B /* ForAJobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B041A56121B7B8C100690E9B /* ForAJobUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B041A57121B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJobUITests" */;
+			buildPhases = (
+				B041A55E21B7B8C100690E9B /* Sources */,
+				B041A55F21B7B8C100690E9B /* Frameworks */,
+				B041A56021B7B8C100690E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B041A56421B7B8C100690E9B /* PBXTargetDependency */,
+			);
+			name = ForAJobUITests;
+			productName = ForAJobUITests;
+			productReference = B041A56221B7B8C100690E9B /* ForAJobUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B041A53721B7B8BF00690E9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "大仙儿飘";
+				TargetAttributes = {
+					B041A53E21B7B8BF00690E9B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B041A55621B7B8C100690E9B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B041A53E21B7B8BF00690E9B;
+					};
+					B041A56121B7B8C100690E9B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = B041A53E21B7B8BF00690E9B;
+					};
+				};
+			};
+			buildConfigurationList = B041A53A21B7B8BF00690E9B /* Build configuration list for PBXProject "ForAJob" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B041A53621B7B8BF00690E9B;
+			productRefGroup = B041A54021B7B8BF00690E9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B041A53E21B7B8BF00690E9B /* ForAJob */,
+				B041A55621B7B8C100690E9B /* ForAJobTests */,
+				B041A56121B7B8C100690E9B /* ForAJobUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B041A53D21B7B8BF00690E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B041A54F21B7B8C100690E9B /* LaunchScreen.storyboard in Resources */,
+				B041A54C21B7B8C100690E9B /* Assets.xcassets in Resources */,
+				B041A54A21B7B8BF00690E9B /* Main.storyboard in Resources */,
+				B08CFC5821BFA47600CF4685 /* useofterms1.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A55521B7B8C100690E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A56021B7B8C100690E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51447B7B920DD1751A144FA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForAJob/Pods-ForAJob-resources.sh",
+				"${PODS_ROOT}/AVOSCloud/AVOS/AVOSCloud/AVOSCloud_Art.inc",
+				"${PODS_ROOT}/Bugtags/Bugtags.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AVOSCloud_Art.inc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Bugtags.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForAJob/Pods-ForAJob-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C756D5D2D3C69DA7A8542DF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForAJob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B041A53B21B7B8BF00690E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0795CF321BE0C0700ECC274 /* GAFSuccessfulDeliveryView.m in Sources */,
+				B041A59421B7B9F500690E9B /* GAFAJPrivacyAgreementView.m in Sources */,
+				B042661221B924560004C895 /* FAJAdvertisingObject.m in Sources */,
+				B0795D1D21BE6D3000ECC274 /* PerfectSameTableViewCell.m in Sources */,
+				B041A57921B7B9CE00690E9B /* GAFAJTabbarVC.m in Sources */,
+				B041A59221B7B9F500690E9B /* GAFAJWorkViewController.m in Sources */,
+				B041A54721B7B8BF00690E9B /* ViewController.m in Sources */,
+				B0795CF021BE030500ECC274 /* GAFReportView.m in Sources */,
+				B04265FF21B8C33D0004C895 /* FAJCacheManager.m in Sources */,
+				B042660821B8F3200004C895 /* SecondScrollowViewViewController.m in Sources */,
+				B042660B21B8F7ED0004C895 /* ThridScrollowViewViewController.m in Sources */,
+				B03753FB21BA1634001F0E22 /* GAFAJRecordDetailsViewController.m in Sources */,
+				B041A57A21B7B9CE00690E9B /* GAFAJNav.m in Sources */,
+				B042660221B8C3880004C895 /* FAJBaseDBManager.m in Sources */,
+				B03753FE21BCD214001F0E22 /* GAFRecordBottomView.m in Sources */,
+				B0795D1A21BE6D1700ECC274 /* PerfectNameTableViewCell.m in Sources */,
+				B037540121BD28CF001F0E22 /* FAJRecordDemoObject.m in Sources */,
+				B0795D1121BE5C2100ECC274 /* GuanyuViewController.m in Sources */,
+				B04265FC21B8C2920004C895 /* FAJMyFavoriteObject.m in Sources */,
+				B08CFC5321BF6D6D00CF4685 /* SelectedDataPerfectView.m in Sources */,
+				B041A55221B7B8C100690E9B /* main.m in Sources */,
+				B041A5A321B7CE6800690E9B /* FirstPrivacyAgreementController.m in Sources */,
+				B041A59721B7B9F500690E9B /* NetworkTools.m in Sources */,
+				B0795D1721BE6A0300ECC274 /* PerfectViewController.m in Sources */,
+				B041A59A21B7C61C00690E9B /* MBProgressHUD+Add.m in Sources */,
+				B041A59321B7B9F500690E9B /* GAFAJLoginViewController.m in Sources */,
+				B08CFC5621BF8F9600CF4685 /* MySCTDViewController.m in Sources */,
+				B041A59521B7B9F500690E9B /* GAFAJMyViewController.m in Sources */,
+				B0795CFA21BE153300ECC274 /* MineTableViewCell.m in Sources */,
+				B041A54421B7B8BF00690E9B /* AppDelegate.m in Sources */,
+				B042661521B92F830004C895 /* GAFWebViewController.m in Sources */,
+				B037540421BD7009001F0E22 /* GAFAJRecordTypeViewController.m in Sources */,
+				B0795CF721BE152100ECC274 /* DeliveryTableViewCell.m in Sources */,
+				B041A59621B7B9F500690E9B /* GAFAJRecordViewController.m in Sources */,
+				B04265F921B8C1D20004C895 /* FAJBaseObject.m in Sources */,
+				B042660F21B9160D0004C895 /* WorkTableViewCell.m in Sources */,
+				B041A5A621B7CFEB00690E9B /* FirstScrollowViewController.m in Sources */,
+				B041A59D21B7C70100690E9B /* VertifyObject.m in Sources */,
+				B042660521B8C3FF0004C895 /* FAJMyFavoriteDBManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A55321B7B8C100690E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B041A55C21B7B8C100690E9B /* ForAJobTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B041A55E21B7B8C100690E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B041A56721B7B8C100690E9B /* ForAJobUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B041A55921B7B8C100690E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B041A53E21B7B8BF00690E9B /* ForAJob */;
+			targetProxy = B041A55821B7B8C100690E9B /* PBXContainerItemProxy */;
+		};
+		B041A56421B7B8C100690E9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B041A53E21B7B8BF00690E9B /* ForAJob */;
+			targetProxy = B041A56321B7B8C100690E9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B041A54821B7B8BF00690E9B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B041A54921B7B8BF00690E9B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B041A54D21B7B8C100690E9B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B041A54E21B7B8C100690E9B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B041A56921B7B8C100690E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B041A56A21B7B8C100690E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B041A56C21B7B8C100690E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE45CA3AF50E0F48C9B08BAD /* Pods-ForAJob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQK38TX6C4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/qgy/Desktop/forajob/ForAJob/PrefixHeader.pch;
+				INFOPLIST_FILE = ForAJob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenlllwmk.ForAJob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B041A56D21B7B8C100690E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2310B5BC894C896877475165 /* Pods-ForAJob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JQK38TX6C4;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/qgy/Desktop/forajob/ForAJob/PrefixHeader.pch;
+				INFOPLIST_FILE = ForAJob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenlllwmk.ForAJob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B041A56F21B7B8C100690E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForAJobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenwmk.ForAJobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForAJob.app/ForAJob";
+			};
+			name = Debug;
+		};
+		B041A57021B7B8C100690E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForAJobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenwmk.ForAJobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForAJob.app/ForAJob";
+			};
+			name = Release;
+		};
+		B041A57221B7B8C100690E9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForAJobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenwmk.ForAJobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForAJob;
+			};
+			name = Debug;
+		};
+		B041A57321B7B8C100690E9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ForAJobUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.yunkuake.corenwmk.ForAJobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ForAJob;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B041A53A21B7B8BF00690E9B /* Build configuration list for PBXProject "ForAJob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B041A56921B7B8C100690E9B /* Debug */,
+				B041A56A21B7B8C100690E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B041A56B21B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B041A56C21B7B8C100690E9B /* Debug */,
+				B041A56D21B7B8C100690E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B041A56E21B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B041A56F21B7B8C100690E9B /* Debug */,
+				B041A57021B7B8C100690E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B041A57121B7B8C100690E9B /* Build configuration list for PBXNativeTarget "ForAJobUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B041A57221B7B8C100690E9B /* Debug */,
+				B041A57321B7B8C100690E9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B041A53721B7B8BF00690E9B /* Project object */;
+}
